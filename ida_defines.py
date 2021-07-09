@@ -95,6 +95,7 @@ if IDA_SDK_VERSION >= 740:
     IDAAPI_AddHotkey    = add_idc_hotkey
     IDAAPI_CompileLine  = compile_idc_text
     IDAAPI_MakeNameEx   = set_name
+    IDAAPI_get_inf_structure = get_inf_structure
     # classes
     IDAAPI_Choose = Choose
     IDAAPI_Form = Form
@@ -162,6 +163,7 @@ elif IDA_SDK_VERSION >= 700:
     IDAAPI_AddHotkey    = AddHotkey
     IDAAPI_CompileLine  = CompileLine
     IDAAPI_MakeNameEx   = MakeNameEx
+    IDAAPI_get_inf_structure = get_inf_structure
     # classes
     IDAAPI_Choose = Choose
     IDAAPI_Form = Form
@@ -229,6 +231,7 @@ else:
     IDAAPI_AddHotkey    = AddHotkey
     IDAAPI_CompileLine  = CompileLine
     IDAAPI_MakeNameEx   = MakeNameEx
+    IDAAPI_get_inf_structure = get_inf_structure
     # classes
     IDAAPI_Choose = Choose2
     IDAAPI_Form = Form

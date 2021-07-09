@@ -326,3 +326,15 @@ class Utils():
         if s[0]=='\'' and s[-1]=='\'':
             return s[1:-1]
         return s
+    
+    ################################################################################################
+    @staticmethod
+    def GetPlatform():
+        info = IDAAPI_get_inf_structure()
+        if info.is_64bit():
+            bits = 64
+        elif info.is_32bit():
+            bits = 32
+        else:
+            bits = 16
+        return bits
